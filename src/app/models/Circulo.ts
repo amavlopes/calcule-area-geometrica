@@ -5,6 +5,7 @@ export class Circulo extends FormaGeometrica {
 
   constructor(raio: number) {
     super();
+
     this._raio = raio;
   }
 
@@ -22,9 +23,11 @@ export class Circulo extends FormaGeometrica {
 
   public mostrarLog(): void {
     console.log(
-      `Foi criado um Círculo de raio ${
+      `Foi criado um ${Circulo.name} de raio ${
         this._raio
-      }. \nResultado do cálculo da área do Círculo é: ${this.calcularArea()}. \n\n`
+      }. \nResultado do cálculo da área do ${
+        Circulo.name
+      } é: ${this.calcularArea()}. \n\n`
     );
   }
 }

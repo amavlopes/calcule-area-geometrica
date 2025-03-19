@@ -1,8 +1,8 @@
 import express from "express";
 import routes from "./routes";
-import { FormaGeometrica } from "./app/models/FormaGeometrica";
 import { Circulo } from "./app/models/Circulo";
 import { Quadrado } from "./app/models/Quadrado";
+import { Retangulo } from "./app/models/Retangulo";
 
 class App {
   private _server;
@@ -34,6 +34,11 @@ class App {
     const quadrado = new Quadrado(2);
     quadrado.calcularArea();
     quadrado.mostrarLog();
+
+    // Retângulo
+    const retangulo = new Retangulo(10, 2);
+    retangulo.calcularArea();
+    retangulo.mostrarLog();
   }
 
   middlewares(): void {

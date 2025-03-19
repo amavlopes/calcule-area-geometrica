@@ -3,7 +3,11 @@ export abstract class FormaGeometrica {
 
   public mostrarLog(): void {
     console.log(
-      `Foi criada uma Forma Geomética.\nResultado do cálculo da área da Forma Geomética é: ${this.calcularArea()}. \n\n`
+      `Foi criada uma ${
+        FormaGeometrica.name
+      }.\nResultado do cálculo da área da ${
+        FormaGeometrica.name
+      } é: ${this.calcularArea()}. \n\n`
     );
   }
 }

@@ -5,6 +5,7 @@ export class Quadrado extends FormaGeometrica {
 
   constructor(lado: number) {
     super();
+
     this._lado = lado;
   }
 
