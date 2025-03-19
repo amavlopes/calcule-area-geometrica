@@ -1,0 +1,18 @@
+{
+  "name": "calcule-area-geometrica",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "tsx watch ./src/server.ts"
+  },
+  "author": "Amanda Avelino Lopes",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "express": "^4.21.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}
