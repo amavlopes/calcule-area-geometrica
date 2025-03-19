@@ -3,6 +3,7 @@ import routes from "./routes";
 import { Circulo } from "./app/models/Circulo";
 import { Quadrado } from "./app/models/Quadrado";
 import { Retangulo } from "./app/models/Retangulo";
+import { Triangulo } from "./app/models/Triangulo";
 
 class App {
   private _server;
@@ -21,7 +22,7 @@ class App {
   }
 
   init(): void {
-    // Círculo
+    // Circulo
     const circulo = new Circulo(0.5);
     circulo.calcularArea();
     circulo.mostrarLog();
@@ -35,10 +36,20 @@ class App {
     quadrado.calcularArea();
     quadrado.mostrarLog();
 
-    // Retângulo
+    // Retangulo
     const retangulo = new Retangulo(10, 2);
     retangulo.calcularArea();
     retangulo.mostrarLog();
+
+    // Triangulo
+    const triangulo = new Triangulo(20, 4);
+    triangulo.calcularArea();
+    triangulo.mostrarLog();
+
+    triangulo.base = 10;
+    triangulo.altura = 5;
+    triangulo.calcularArea();
+    triangulo.mostrarLog();
   }
 
   middlewares(): void {
