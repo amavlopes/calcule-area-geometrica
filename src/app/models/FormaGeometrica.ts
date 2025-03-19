@@ -1,9 +1,9 @@
 export abstract class FormaGeometrica {
-  abstract calcularArea(): number;
+  public abstract calcularArea(): number;
 
-  public mostrarLog() {
+  public mostrarLog(): void {
     console.log(
-      `Foi criada uma Forma Geomética.\nResultado do cálculo da área da Forma Geomética: ${this.calcularArea()}. \n\n`
+      `Foi criada uma Forma Geomética.\nResultado do cálculo da área da Forma Geomética é: ${this.calcularArea()}. \n\n`
     );
   }
 }
