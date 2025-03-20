@@ -1,3 +1,6 @@
 import app from "./app";
 
-app.listen(3300);
+const port = 3300;
+app.listen(port, () =>
+  console.log(`O servidor está rodando através da porta ${port}`)
+);
